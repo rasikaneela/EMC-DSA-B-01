@@ -11,6 +11,7 @@ var merge = function (nums1, m, nums2, n) {
   let i = 0,
     j = 0,
     temp = [];
+
   while (i < m && j < n) {
     if (nums1[i] < nums2[j]) {
       temp.push(nums1[i]);
@@ -20,6 +21,7 @@ var merge = function (nums1, m, nums2, n) {
       j++;
     }
   }
+
   while (i < m) {
     temp.push(nums1[i]);
     i++;
